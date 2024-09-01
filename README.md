@@ -1,2 +1,47 @@
 # Servidor-Web-MultiThread
 Trabalho Final da disciplina de Redes de Computadores com o objetivo de implementar um servidor web multithreaded, capaz de responder solicitações de arquivos para navegador web. O projeto foi implementado em Python utilizando POO.
+
+## Requisitos
+
+- Python 3.x
+
+## Instruções de Uso
+
+### 1. Executar o Servidor
+
+1. Navegue até o diretório onde o arquivo `servidor.py` está localizado.
+2. No terminal, execute o arquivo `servidor.py` com o comando:
+
+    ```bash
+    python servidor.py
+    ```
+
+3. Quando solicitado, insira o caminho para o diretório raiz dos arquivos que o servidor irá servir. Já existe uma pasta chamada `content` junto com o arquivo `servidor.py`, que contém alguns arquivos para teste.
+
+### 2. Acessar o Servidor
+
+- Com o servidor em funcionamento, abra um navegador de sua preferência.
+- Acesse o endereço:
+
+    ```
+    http://localhost:10000
+    ```
+
+    Você será direcionado para a página HTML principal, que contém links para os outros arquivos de teste disponíveis na pasta `content`.
+
+### 3. Acessar Arquivos Específicos
+
+- Para acessar um arquivo específico dentro do diretório raiz, adicione o nome do arquivo e sua extensão ao final do endereço. Por exemplo, para acessar um arquivo chamado `icon.ico`, utilize:
+
+    ```
+    http://localhost:10000/icon.ico
+    ```
+
+## Encerramento do Servidor
+
+- Para encerrar o servidor, pressione `CTRL + C` no terminal onde o servidor está em execução. Isso encerrará o socket e fechará todas as conexões ativas.
+
+## Notas
+
+- O servidor suporta arquivos com as seguintes extensões: `.html`, `.jpg`, `.jpeg`, `.png`, `.gif`, `.ico`, `.mp4`, `.wav`.
+- O servidor foi projetado para manter conexões persistentes para clientes que utilizam HTTP 1.1.
