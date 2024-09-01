@@ -9,14 +9,14 @@ Trabalho Final da disciplina de Redes de Computadores com o objetivo de implemen
 
 ### 1. Executar o Servidor
 
-1. Navegue até o diretório onde o arquivo `servidor.py` está localizado.
-2. No terminal, execute o arquivo `servidor.py` com o comando:
+1. Navegue até o diretório onde o arquivo `servidor_web_multithread.py` está localizado.
+2. No terminal, execute o arquivo `servidor_web_multithread.py` com o comando:
 
     ```bash
-    python servidor.py
+    python servidor_web_multithread.py
     ```
 
-3. Quando solicitado, insira o caminho para o diretório raiz dos arquivos que o servidor irá servir. Já existe uma pasta chamada `content` junto com o arquivo `servidor.py`, que contém alguns arquivos para teste.
+3. Quando solicitado, insira o caminho para o diretório raiz dos arquivos que o servidor irá servir. Já existe uma pasta chamada `content` junto com o arquivo `servidor_web_multithread.py`, que contém alguns arquivos para teste.
 
 ### 2. Acessar o Servidor
 
