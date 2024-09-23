@@ -1,5 +1,5 @@
 # Servidor-Web-MultiThread
-Trabalho Final da disciplina de Redes de Computadores com o objetivo de implementar um servidor web multithreaded, capaz de responder solicitações de arquivos para navegador web. O projeto foi implementado em Python utilizando POO.
+Trabalho Final da disciplina de Redes de Computadores com o objetivo de implementar um servidor web multithreaded, capaz de responder solicitações de arquivos para navegador web. O projeto foi implementado em Python, utilizando POO.
 
 ## Requisitos
 
@@ -9,14 +9,12 @@ Trabalho Final da disciplina de Redes de Computadores com o objetivo de implemen
 
 ### 1. Executar o Servidor
 
-1. Navegue até o diretório onde o arquivo `servidor_web_multithread.py` está localizado.
-2. No terminal, execute o arquivo `servidor_web_multithread.py` com o comando:
+1. No terminal, navegue até o diretório onde o arquivo `servidor_web_multithread.py` está localizado.
+2. Execute o arquivo `servidor_web_multithread.py`, informando qual será o diretório raiz. Já existe uma pasta chamada `content` junto com o arquivo `servidor_web_multithread.py`, que contém alguns arquivos para teste.
 
     ```bash
-    python servidor_web_multithread.py
+    python servidor_web_multithread.py C:\Users\Hugo\Desktop\Trabalho_de_Redes\content
     ```
-
-3. Quando solicitado, insira o caminho para o diretório raiz dos arquivos que o servidor irá servir. Já existe uma pasta chamada `content` junto com o arquivo `servidor_web_multithread.py`, que contém alguns arquivos para teste.
 
 ### 2. Acessar o Servidor
 
