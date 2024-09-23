@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes de Computadores - Trabalho Final</title>
+    
+    <!-- Link para o favicon -->
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+            margin-bottom: 50px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #004499;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redes de Computadores - Trabalho Final</h1>
+    <h2>Bruno, Hugo e Sadi</h2>
+    
+    <ul>
+        <li><a href="http://localhost:10000/bazinga.jpg" id="testeImagem" target="_blank">Teste de Imagem</a></li>
+        <li><a href="http://localhost:10000/rick.mp4" target="_blank">Teste de Vídeo</a></li>
+        <li><a href="http://localhost:10000/pontos.html" target="_blank">Teste HTML</a></li>
+    </ul>
+
+    <audio id="som" src="bazinga.wav"></audio>
+
+    <script>
+        var linkImagem = document.getElementById("testeImagem");
+        var som = document.getElementById("som");
+
+        linkImagem.addEventListener("click", function(event) {
+            event.preventDefault();  
+            som.play();  
+            window.open(linkImagem.href, '_blank');  
+        });
+    </script>
+</body>
+</html>

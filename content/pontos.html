@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precisamos de pontos</title>
+
+    <!-- Link para o favicon -->
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .painel {
+            margin: auto;
+            background-color: white;
+            width: 500px;
+            height: 400px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sim {
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+        #nao {
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <h1>Você acha que esse trabalho merece 30 pontos?</h1>
+
+        <img id="imagem" src="gif1.gif" height="200px" alt=""><br>
+
+        <button id="sim" onclick="mudarImagem()"> Sim! </button>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+    </div>
+
+    <audio id="som" src="click.wav"></audio>
+
+    <script>
+        function fuja() {
+            var botaoNao = document.getElementById("nao");
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+        function mudarImagem() {
+            var imagem = document.getElementById("imagem");
+            var som = document.getElementById("som");
+
+            imagem.src = "gif2.gif";
+            som.play();
+        }
+    </script>  
+</body>
+</html>
